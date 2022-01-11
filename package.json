@@ -1,7 +1,7 @@
 {
   "name": "phonebookback",
   "version": "1.0.0",
-  "description": "backend node  server for a phone book app ",
+  "description": "backend node server for a phone book app ",
   "main": "index.js",
   "scripts": {
     "test": "test",
