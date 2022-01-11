@@ -40,7 +40,7 @@ app.use(express.static("build"));
 let persons = [
   {
     id: 1,
-    name: "Arto Hellas",
+    name: "Arto ssHellas",
     number: "040-123456",
   },
   {
@@ -98,10 +98,11 @@ app.post("/api/persons", (request, response) => {
       .status(409)
       .json({ error: " Duplicate Data already existas" });
   } else {
+    const p2;
     person = request.body;
     person.id = uuidv4();
-    persons = persons.concat(person);
-    return response.json(persons);
+    p2 = persons.concat(person);
+    return response.json(p2);
   }
 });
 
