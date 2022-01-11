@@ -1,0 +1,24 @@
+{
+  "name": "phonebookback",
+  "version": "1.0.0",
+  "description": "backend node server for a phone book app ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js",
+    "nmon": "nodemon index.js",
+    "build:ui": "rm -rf build && cd ../phonbook && npm run build && cp -r build ../phonbookback",
+    "deploy": "git push heroku main",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
+    "logs:prod": "heroku logs --tail"
+  },
+  "author": "Minhaz",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}
