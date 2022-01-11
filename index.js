@@ -98,11 +98,10 @@ app.post("/api/persons", (request, response) => {
       .status(409)
       .json({ error: " Duplicate Data already existas" });
   } else {
-    const p2;
     person = request.body;
     person.id = uuidv4();
-    p2 = persons.concat(person);
-    return response.json(p2);
+    persons = persons.concat(person);
+    return response.json(persons);
   }
 });
 
