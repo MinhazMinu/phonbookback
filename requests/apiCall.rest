@@ -2,16 +2,16 @@
 GET http://localhost:3001/api/persons HTTP/1.1
 
 ###
-GET http://localhost:3001/api/persons/1 HTTP/1.1
+GET http://localhost:3001/api/persons/61de5c9e99da291d59b47e74 HTTP/1.1
 
 ###
-DELETE http://localhost:3001/api/persons/1 HTTP/1.1
+DELETE http://localhost:3001/api/persons/61de5c9e99da291d59b47e74 HTTP/1.1
 
 ###
 POST http://localhost:3001/api/persons HTTP/1.1
 Content-Type: application/json
 
 {
-  "name" : "Minhsdkkfffer",
+  "name" : "minut",
   "number" : "123456"
 }
